@@ -1,0 +1,24 @@
+{
+  "name": "tdd_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "start": "npm run",
+    "mytest": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/test/index\"",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/build/index\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "concurrently": "^4.1.1",
+    "http-server": "^0.11.1",
+    "mocha": "^6.1.4"
+  }
+}
